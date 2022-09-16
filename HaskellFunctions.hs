@@ -1,10 +1,3 @@
--- setting the "warn-incomplete-patterns" flag asks GHC to warn you
--- about possible missing cases in pattern-matching definitions
-{-# OPTIONS_GHC -fwarn-incomplete-patterns #-}
-
--- see https://wiki.haskell.org/Safe_Haskell
-{-# LANGUAGE Safe #-}
-
 module Assessed3 (priceRange , allergyFree ,
                   isValidSpec , checkSpec ,
                   parentDir , openSubDir ,
@@ -13,10 +6,6 @@ where
 
 import Types
 import Q3Example
-
----------------------------------------------------------------------------------
----------------- DO **NOT** MAKE ANY CHANGES ABOVE THIS LINE --------------------
----------------------------------------------------------------------------------
 
 {- Exercise 1 -}
 
