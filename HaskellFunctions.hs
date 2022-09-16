@@ -1,7 +1,7 @@
-module Assessed3 (priceRange , allergyFree ,
-                  isValidSpec , checkSpec ,
-                  parentDir , openSubDir ,
-                  cross , sieveFrom , sequenceFrom)
+module HaskellFunctions (priceRange , allergyFree ,
+                         isValidSpec , checkSpec ,
+                         parentDir , openSubDir ,
+                         cross , sieveFrom , sequenceFrom)
 where
 
 import Types
