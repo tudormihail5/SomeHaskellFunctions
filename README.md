@@ -15,7 +15,7 @@ A cupcake recipe is represented as a list of ingredients, and a cupcake is repre
 [CC (P 200) [Soy]] 
 
 **Exercise 2:**<br />
-I needed to add an additional step of checking that every tin satisfies some formal specification before it is baked. A tin satisfies And s1 s2 if it satisfies both s1 and s2, Or s1 s2 if either s1 or s2, etc. I had to write a function isValidSpec that verifies that the given specification is well-formed for the provided Tin, and checkSpecs, which takes a specification s and a tin t as imputs, and returns True just in case t satisfies the specification s, or else False.
+I needed to add an additional step of checking that every tin satisfies some formal specification before it is baked. A tin satisfies And s1 s2 if it satisfies both s1 and s2, Or s1 s2 if either s1 or s2, etc. I had to write a function isValidSpec that verifies that the given specification is well-formed for the provided Tin, and checkSpecs, which takes a specification s and a tin t as imputs, and returns True just in case t satisfies the specification s, or else False.<br />
 **Examples:**<br />
 sampletin :: Tin<br />
 sampletin = [[Nuts], [Dairy,Gluten], [], [Soy]]<br />
