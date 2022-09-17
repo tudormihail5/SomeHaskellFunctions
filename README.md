@@ -10,6 +10,7 @@ Both files are imported by SomeHaskellFunctions.hs.
 A cupcake recipe is represented as a list of ingredients, and a cupcake is represented as a recipe together with a price. I wrote some functions to filter cupcakes by different criteria. priceRange minPrice maxPrice cupcakes returns the cupcakes whose price is between those prices. allergyFree allergens cupcakes returns the cupcakes that do not contain any allergens.
 
 **Examples:**
+
 *Main> priceRange (P 200) (P 300) [CC (P 200) [Soy], CC (P 250) [Dairy], CC (P 400) [Nuts,Gluten]]
 [CC (P 200) [Soy],CC (P 250) [Dairy]]
 *Main> allergyFree [Dairy,Nuts] [CC (P 200) [Soy], CC (P 250) [Dairy], CC (P 400) [Nuts,Gluten]]
@@ -19,6 +20,7 @@ A cupcake recipe is represented as a list of ingredients, and a cupcake is repre
 I needed to add an additional step of checking that every tin satisfies some formal specification before it is baked. A tin satisfies And s1 s2 if it satisfies both s1 and s2, Or s1 s2 if either s1 or s2, etc. I had to write a function isValidSpec that verifies that the given specification is well-formed for the provided Tin, and checkSpecs, which takes a specification s and a tin t as imputs, and returns True just in case t satisfies the specification s, or else False.
 
 **Examples:**
+
 sampletin :: Tin
 sampletin = [[Nuts], [Dairy,Gluten], [], [Soy]]
 satisfies the specification
