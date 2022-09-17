@@ -38,7 +38,18 @@ True<br />
 True
 
 **Exercise 4:**<br />
-
+This exercise is about the Sieve of Eratosthenes. The main goal was to define an infinite list of booleans such that, for any given n >= 2, we have sieve !! (n-2) = True if and only if n in prime. cross, for every n >= 2 and every infinite list xs, we have that cross n xs crosses out the elements of xs, by setting them to False, every n elements, starting from position n-1 and keeping all other positions as they are in the list xs. sieveFrom n is the transformation we need to make to out infinite list as we pass the number n. Using sieveFrom, I needed to define sieve :: [Bool]. Finally, function sequenceFrom was defined such that the list of all prime numbers can be given by the funtion primes :: [Int].<br />
+**Examples:**<br />
+*Main> take 20 (cross 2 (repeat True))<br />
+[True,False,True,False,True,False,True,False,True,False,True,False,True,False,True,False,True,False,True,False]<br />
+*Main> take 20 (cross 3 (repeat True))<br />
+[True,True,False,True,True,False,True,True,False,True,True,False,True,True,False,True,True,False,True,True]<br />
+*Main> take 20 (sequenceFrom 2 (cross 5 (repeat True)))<br />
+[2,3,4,5,6,7,8,10,12,13,14,15,17,18,19,20,22,23,24,25]<br />
+*Main> take 20 (sequenceFrom 2 (cross 2 (repeat True)))<br />
+[2,4,6,8,10,12,14,16,18,20,22,24,26,28,30,32,34,36,38,40]<br />
+*Main> take 10 primes<br />
+[2,3,5,7,11,13,17,19,23,29]
 
 ### How I built them:
 
