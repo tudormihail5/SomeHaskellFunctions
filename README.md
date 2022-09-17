@@ -27,7 +27,18 @@ Moreover, the 2 above specifications are valid, while the specifications<br />
 And (HasCup 0 Nuts) (And (HasCup (-2) Gluten) (And (Not (HasCup 2 Dairy)) (HasCup 3 Soy)))<br />
 Or (HasCup 0 Dairy) (HasCup 4 Soy) 
 
-**Exercise 3:** 
+**Exercise 3:**<br />
+In this exercise, I developed an auxiliary data type for navigating the directory structure, to enter a subdirectory by keeping the list of entries above and below the subdirectory we choose. This is represented by yhe type EnteredDirectory. A Breadcrumb is a pair of a directory (the one that we are currently looking at which we will call the 'focus') and a list of entered directories. parentDir passes to the parent directory and returns Nothing if it is not the root. openSubDir takes a directory name and attempts to find in the currently focused directory, making it the new focus. The function will return Nothing if the subdirectory can not be found.<br />
+**Examples:**<br />
+*Main> parentDir bc1 == Just bc2<br />
+True<br />
+*Main> openSubDir "french" (recipes, []) == Just bc0<br />
+True<br />
+*Main> openSubDir "tex-mex" (recipes, []) == Nothing<br />
+True
+
+**Exercise 4:**<br />
+
 
 ### How I built them:
 
