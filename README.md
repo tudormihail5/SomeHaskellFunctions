@@ -28,7 +28,7 @@ And (HasCup 0 Nuts) (And (HasCup 1 Gluten) (And (Not (HasCup 2 Dairy)) (HasCup 3
 but does not satisfy the specification
 Or (HasCup 0 Dairy) (HasCup 1 Soy)
 Moreover, the 2 above specifications are valid, while the specifications
-And (HasCup 0 Nuts) (And (HasCup (-2) Gluten) (And (Not (HasCup 2 Dairy)) (HasCup 3 Soy)))
+And (HasCup 0 Nuts) (And (HasCup (-2) Gluten) (And (Not (HasCup 2 Dairy)) (HasCup 3 Soy)))/n
 Or (HasCup 0 Dairy) (HasCup 4 Soy)
 
 **Exercise 3:**
