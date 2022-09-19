@@ -72,4 +72,4 @@ For every exercise I created some helping functions:
 
 ### Challenges I ran into:
 
-I found Exercise 4 the hardest one by far, as it requested many functions. But this was not the main problem. It took me a while to properly understand what I am supposed to do. 
+I found Exercise 4 the hardest one by far, as it requested many functions. But this was not the main problem. It took me a while to properly understand what I am supposed to do. But after some research on the Sieve of Eratosthenes, everything worked smoothly.
