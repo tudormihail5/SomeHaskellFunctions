@@ -53,6 +53,13 @@ This exercise is about the Sieve of Eratosthenes. The main goal was to define an
 
 ### How I built them:
 
-
+For every exercise I created some helping functions:
+- For Exercise 1, I created comp, that checks if a certain element is in a list.
+- Using comp, I created nothingEq, that checks if any list element is duplicate.
+- Then I used these 2 functions to create allergyFree, as for priceRange I did not need any help.
+- For Exercise 2, I created hasElem, that checks if a list has a certain element.
+- Using this, I created checkSpec, using the function for the 'HasCup x y' case, as the other ones could be done using logical operations, like and, or, and not.
+- isValidSpec needed logical operations as well, but the 'HasCup x y' case only needed me to check if the length of z is bigger than x, when x is positive.
+- Exercise 3
 
 ### Challenges I ran into:
