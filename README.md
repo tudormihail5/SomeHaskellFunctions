@@ -63,3 +63,5 @@ For every exercise I created some helping functions:
 - Exercise 3
 
 ### Challenges I ran into:
+
+I found Exercise 4 the hardest one by far, as it requested many functions. But this was not the main problem. It took me a while to properly understand what I am supposed to do. 
