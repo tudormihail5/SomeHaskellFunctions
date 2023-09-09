@@ -58,6 +58,7 @@ For every exercise I created some helping functions:
 - Using comp, I created nothingEq, that checks if any list element is duplicate.
 - Then I used these 2 functions to create allergyFree, as for priceRange I did not need any help.
 <!-- -->
+<!-- -->
 - For Exercise 2, I created hasElem, that checks if a list has a certain element.
 - Using this, I created checkSpec, using the function for the 'HasCup x y' case, as the other ones could be done using logical operations, like and, or, and not.
 - isValidSpec needed logical operations as well, but the 'HasCup x y' case only needed me to check if the length of z is bigger than x, when x is positive.
