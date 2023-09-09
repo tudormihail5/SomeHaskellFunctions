@@ -56,17 +56,17 @@ This exercise is about the Sieve of Eratosthenes. The main goal was to define an
 For every exercise I created some helping functions:
 - For Exercise 1, I created comp, that checks if a certain element is in a list.
 - Using comp, I created nothingEq, that checks if any list element is duplicate.
-- Then I used these 2 functions to create allergyFree, as for priceRange I did not need any help.<br />
-  
+- Then I used these 2 functions to create allergyFree, as for priceRange I did not need any help.
+
 - For Exercise 2, I created hasElem, that checks if a list has a certain element.
 - Using this, I created checkSpec, using the function for the 'HasCup x y' case, as the other ones could be done using logical operations, like and, or, and not.
-- isValidSpec needed logical operations as well, but the 'HasCup x y' case only needed me to check if the length of z is bigger than x, when x is positive.<br />
-  
+- isValidSpec needed logical operations as well, but the 'HasCup x y' case only needed me to check if the length of z is bigger than x, when x is positive.
+- 
 - For Exercise 3, I created parentDir without any help function, manually creating the Breadcrumb it has to return.
 - The name function returns the name of a DirectoryEntry.
 - strings returns a list with all the names from a DirectoryEntry list.
-- before<br />
-  
+- before
+
 - For Exercise 4, I created help, that helps me with cross, doing almost the same thing, but with one more number, that is 0 at the beginning, and is increased by 1, until the list is over. This helped me to put 'False' in the right positions of the list.
 - help'' was done to help me create sieveFrom, in the same way as help; sieveFrom uses cross to create the list of booleans needed for the primes.
 - sieve returns the infinite list of booleans that we need, using sieveFrom.
