@@ -62,10 +62,13 @@ For every exercise I created some helping functions:
 - Using this, I created checkSpec, using the function for the 'HasCup x y' case, as the other ones could be done using logical operations, like and, or, and not.
 - isValidSpec needed logical operations as well, but the 'HasCup x y' case only needed me to check if the length of z is bigger than x, when x is positive.
 <!-- -->
-- For Exercise 3, I created parentDir without any help function, manually creating the Breadcrumb it has to return.
-- The name function returns the name of a DirectoryEntry.
-- strings returns a list with all the names from a DirectoryEntry list.
-- before
+- For Exercise 3, I created strings, which takes a list of  DirectoryEntry and extracts their names, returning a list of strings.
+- name, given a string s and a list of DirectoryEntry, it extracts and returns the name of the entry
+- before, given a string s and a list of DirectoryEntry, it returns a list of entries that appear before the first occurence of s in the list.
+- after returns a list of entries that appear after the i-th occurence of s in the list.
+- dir searches for an entry with the name s and returns the corresponding Directory if found.
+- parentDir takes a Breadcrumb and returns Maybe Breadcrumb. If the Breadcrumb is empty, it returns Nothing. Otherwise, it constructs a new breadcrumb by moving up one directory, removing the last entered directory.
+- openSubDir takes a string s and a Breadcrumb. It checks if s exists in the current directory's contents. If it does, it constructs a new breadcrumb by entering the subdirectory specified by s.
 <!-- -->
 - For Exercise 4, I created help, that helps me with cross, doing almost the same thing, but with one more number, that is 0 at the beginning, and is increased by 1, until the list is over. This helped me to put 'False' in the right positions of the list.
 - help'' was done to help me create sieveFrom, in the same way as help; sieveFrom uses cross to create the list of booleans needed for the primes.
